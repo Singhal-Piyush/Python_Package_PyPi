@@ -3,6 +3,7 @@ from typing import List
 
 HYPEN_E_DOT = "-e ."
 
+"""
 def get_requirements(filepath:str)->List[str]:
     requirements = []
     with open(filepath) as f:
@@ -11,7 +12,7 @@ def get_requirements(filepath:str)->List[str]:
 
         if HYPEN_E_DOT in requirements:
             requirements.remove(HYPEN_E_DOT)
-    return requirements
+    return requirements """
 
 
 
@@ -38,6 +39,5 @@ setup(
     },
     package_dir={"":"src"},
     packages=find_packages(where="src"),
-    install_requires = get_requirements("requirements_dev.txt")
 
 )
