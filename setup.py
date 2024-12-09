@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-# from typing import List
+from typing import List
 
 HYPEN_E_DOT = "-e ."
 
@@ -10,7 +10,7 @@ def get_requirements(filepath:str)->List[str]:
         requirements=[req.replace("\n","") for req in requirements]
 
         if HYPEN_E_DOT in requirements:
-            requirements.remove(HYPEN_E_DOT])
+            requirements.remove(HYPEN_E_DOT)
     return requirements
 
 
